@@ -1,11 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateHTML = require('./src/generateHTML');
+const Employee = require('./lib/employee')
 const Intern = require('./lib/intern');
-const Employee = require('./lib/employee');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
-
+const { report } = require('process');
+const newEmp = [];
 
 
 //prompt for new employee
@@ -22,8 +23,9 @@ function nextEmp() {
                 choices: ["Manager", "Engineer", "Intern", "Finished"],
             },
         ]).then((response) => {
+            newEmp.push(response.empType);
             if (response.empType === "Finished") {
-                console.log("Thank you!")
+                console.log("Thank you!");
             }
             else if (response.empType === "Manager") {//employee questions + manager question
                 inquirer
@@ -31,36 +33,38 @@ function nextEmp() {
                     {
                         type: 'input',
                         name: 'empName',
-                        message: 'What is the employee name?'
+                        message: 'What is the employee name?',
+                        default: "Bob Barker"
                     },
                     {
                         type: 'input',
                         name: 'empId',
-                        message: 'Please assign a new employee number with the format e###:'
+                        message: 'Please assign a new employee number with the format e###:',
+                        default: "e103"
                     },
                     {
                         type: 'input',
                         name: 'empEmail',
                         message: 'What is the employee email address?',
+                        default: "bbarker@gmail.com"
                         
                     },
                     {
                         type: 'input',
                         name: 'empNum',
-                        message: 'What is the employee office number?'
+                        message: 'What is the employee office number?',
+                        default: "10"
                     },
                 ]).then((response) => {
-                        //run response through class Employee
-                        const newEntry = new Employee(response.empName, response.empId, response.empEmail);
-
-                        //make sure that worked
-                        console.log(newEntry)
-
+                        
                         //run response through class Manager ... need to add to newEntry
-                        // const newMgr = new Manager(response.empNum);
+                        const newMgr = new Manager(response.empName, response.empId, response.empEmail,response.empNum);
+                        
 
+
+                        console.log(newMgr)
                         //push new info to store file using the id as a unique variable name
-                        fs.appendFileSync("./src/store.js", `const ${response.empNum} = ${newEntry}`)
+                        fs.appendFileSync("./src/store.js", `const ${response.empId} = ${newEmp}`)
 
                 });
             }
