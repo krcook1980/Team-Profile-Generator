@@ -64,7 +64,7 @@ function nextEmp() {
 
                         console.log(newMgr)
                         //push new info to store file using the id as a unique variable name
-                        fs.appendFileSync("./src/store.js", `const ${response.empId} = ${newEmp}`)
+                        fs.writeFileSync("./src/store.js", `const ${response.empId} = ${newMgr}`)
 
                 });
             }

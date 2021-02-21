@@ -1,1 +1,1 @@
-const  = Manager,empName,empId,empEmail,empNumconst 1 = Manager,empName,empId,empEmail,empNumconst 1 = Managerconst 0 = [object Object]const 1 = [object Object]const 2 = [object Object]const e103 = [object Object]const e103 = [object Object]const e103 = [object Object]const e103 = [object Object]const e103 = [object Object]const e103 = Managerconst e103 = Managerconst e103 = Manager
+const e103 = [object Object]
