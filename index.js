@@ -59,12 +59,13 @@ function nextEmp() {
                         
                         //run response through class Manager ... need to add to newEntry
                         const newMgr = new Manager(response.empName, response.empId, response.empEmail,response.empNum);
+
+                        newEmp.push(newMgr)
+                        console.log(newEmp)
                         
-
-
-                        console.log(newMgr)
                         //push new info to store file using the id as a unique variable name
-                        fs.writeFileSync("./src/store.js", `const ${response.empId} = ${newMgr}`)
+                        
+                        fs.appendFileSync("./src/store.js", `\nconst ${response.empId} = ["${newEmp[0]},", "${newEmp[1].empName}", "${newEmp[1].empId}", "${newEmp[1].empEmail}","${newEmp[1].empNum}",]`)
 
                 });
             }
