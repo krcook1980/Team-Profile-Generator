@@ -5,34 +5,16 @@ const Intern = require('./lib/intern');
 const Employee = require('./lib/employee');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
-const newEmp = []
-
-const empQuestions = [{
-    type: 'input',
-    name: 'empName',
-    message: 'What is the employee name?'
-},
-{
-    type: 'input',
-    name: 'empId',
-    message: 'Please assign a new employee number with the format e###'
-},
-{
-    type: 'input',
-    name: 'empEmail',
-    message: 'What is the employee email address?',
-    //figure out validate if not an email address
-},
-
-]
 
 
+
+//prompt for new employee
 function nextEmp() {
-    Employee.prototype.getRole();
+    
     
     //array of questions for user
     inquirer
-        .prompt([
+        .prompt([ //What kind of employee to enter
             {
                 type: 'list',
                 name: 'empType',
@@ -40,13 +22,10 @@ function nextEmp() {
                 choices: ["Manager", "Engineer", "Intern", "Finished"],
             },
         ]).then((response) => {
-            //Add employee to the newEmp array
-            newEmp.push(response.empType);
-            
             if (response.empType === "Finished") {
                 console.log("Thank you!")
             }
-            else if (response.empType === "Manager") {
+            else if (response.empType === "Manager") {//employee questions + manager question
                 inquirer
                 .prompt([
                     {
@@ -63,25 +42,27 @@ function nextEmp() {
                         type: 'input',
                         name: 'empEmail',
                         message: 'What is the employee email address?',
-                        //figure out validate if not an email address
+                        
                     },
                     {
                         type: 'input',
                         name: 'empNum',
                         message: 'What is the employee office number?'
                     },
-                ]).then((response2) => {
-                                      
-                    const newRole = Manager.prototype.getRole();
-                    newEmp.push(response2);
-                    newEmp.push(newRole);
-                    console.log(newEmp)
-                    return newEmp;
-                    //spits out manager then object of rest... not quite what i need
-                });
+                ]).then((response) => {
+                        //run response through class Employee
+                        const newEntry = new Employee(response.empName, response.empId, response.empEmail);
 
-                
-                
+                        //make sure that worked
+                        console.log(newEntry)
+
+                        //run response through class Manager ... need to add to newEntry
+                        // const newMgr = new Manager(response.empNum);
+
+                        //push new info to store file using the id as a unique variable name
+                        fs.appendFileSync("./src/store.js", `const ${response.empNum} = ${newEntry}`)
+
+                });
             }
             else if (response.empType === "Engineer") {
                 inquirer
