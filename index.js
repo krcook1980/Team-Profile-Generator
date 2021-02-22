@@ -50,6 +50,7 @@ function nextMgr() {
             const newMgr = new Manager(response.empName, response.empId, response.empEmail, response.empNum);
 
             newEmp.push(newMgr);
+            newEmp.push(newMgr.getRole());
             
 
             //push new info to store file using the id as a unique variable name
@@ -112,6 +113,7 @@ function nextEmp() {
                         const newEng = new Engineer(response.empName, response.empId, response.empEmail, response.empLink);
 
                         newEmp.push(newEng);
+                        newEmp.push(newEng.getRole());
 
 
                         //push new info to store file using the id as a unique variable name
