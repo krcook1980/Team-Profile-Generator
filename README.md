@@ -1,7 +1,7 @@
 
   # Team Profile Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-  [Full Demo Video](https://drive.google.com/file/d/1C0_Ap6NoSQGz_bWzNQT3QVeXz9zwfSvE/view)
+  [Full Demo Video](https://drive.google.com/file/d/1C0_Ap6NoSQGz_bWzNQT3QVeXz9zwfSvE/view)  
   ![demo clip](src\TPGgif.gif)
 ---
   ## Description
@@ -40,6 +40,6 @@
     - Bootcamp Activities 12, 13, 19, 22, 28
 
   ## Questions
-   Please see my [GitHub profile](https://github.com/krcook1980)
+   Please see my [GitHub profile](https://github.com/krcook1980)  
    You can also email me questions at: kellyrcook1980@gmail.com
 
