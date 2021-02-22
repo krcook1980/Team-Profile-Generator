@@ -3,7 +3,8 @@ const fs = require('fs');
 const generateHTML = require('./src/generateHTML');
 const Intern = require('./lib/intern');
 const Manager = require('./lib/manager');
-const Engineer = require('./lib/engineer')
+const Engineer = require('./lib/engineer');
+
 
 
 //prompt for new employee
@@ -49,7 +50,7 @@ function nextMgr() {
             let newEmp = new Manager(response.empName, response.empId, response.empEmail, response.empNum);
 
             const genCard = generateHTML(newEmp);
-            fs.appendFileSync("./src/store.js", `\n${genCard}`);
+            fs.writeFileSync("./src/store.js", `\n${genCard}`);
 
             //start inquirer for new employee
             nextEmp();
