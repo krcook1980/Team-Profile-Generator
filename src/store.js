@@ -26,7 +26,7 @@ const e107 = `
 <div class='card-body'>    
 <p class='card-text'>Employee ID: e107</p>
 <p class='card-text'>Email: <a href='mailto:kellyrcook1980@gmail.com'>kellyrcook1980@gmail.com</a></p>
-<p class='card-text'>GitHib: <a href='https://github.com/https://github.com/krcook1980' target='_blank'>https://github.com/krcook1980</a></p>
+<p class='card-text'>GitHib: <a href='https://github.com/krcook1980' target='_blank'>https://github.com/krcook1980</a></p>
 </div>
 </div>`
 $(".card-deck").append(e107)

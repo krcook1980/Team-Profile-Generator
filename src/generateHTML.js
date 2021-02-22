@@ -40,7 +40,7 @@ const ${newEmp.empId} = \`
 <div class='card-body'>    
 <p class='card-text'>Employee ID: ${newEmp.empId}</p>
 <p class='card-text'>Email: <a href='mailto:${newEmp.empEmail}'>${newEmp.empEmail}</a></p>
-<p class='card-text'>GitHib: <a href='https://github.com/${newEmp.empLink}' target='_blank'>${newEmp.empLink}</a></p>
+<p class='card-text'>GitHib: <a href='${newEmp.empLink}' target='_blank'>${newEmp.empLink}</a></p>
 </div>
 </div>\`
 $(".card-deck").append(${newEmp.empId})`
