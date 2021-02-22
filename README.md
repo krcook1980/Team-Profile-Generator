@@ -1,7 +1,7 @@
 
-  # Team Profile Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  # Team Profile Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
-  [Full Demo Video](https://drive.google.com/file/d/1C0_Ap6NoSQGz_bWzNQT3QVeXz9zwfSvE/view)
+  [Full Demo Video](https://drive.google.com/file/d/1C0_Ap6NoSQGz_bWzNQT3QVeXz9zwfSvE/view)  
   ![demo clip](https://drive.google.com/file/d/18smkhVL5odC5MyDcMmHw_fdARRPw2khB/view)
 ---
   ## Description
