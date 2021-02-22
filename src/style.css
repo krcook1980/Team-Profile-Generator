@@ -1,0 +1,24 @@
+.bg{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat, repeat;
+    background-color: #171717; /* Used if the image is unavailable */
+    /* height: 1500px; */
+    background-size: cover;
+    overflow: auto;
+    height: 100vh;
+}
+
+.jumbotron{
+    background-color: #9FA682;
+    color: white;
+}
+
+.card-header{
+    background-color: #C799A6;
+    color: #4b2840;
+}
+
+.card-body{
+    background-color: #F9FBF6;
+    color: #4b2840;
+}
