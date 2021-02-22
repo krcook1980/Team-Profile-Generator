@@ -1,2 +1,8 @@
-const cards = []
-const m103 = ["Bob Barker", "m103", "bbarker@thiscompany.com","10"];
+
+
+$('.cardRow').append("Bob Barker")
+
+I need to get actual bootstrap to look at this properly 
+
+I got my info
+Intern is getting it
