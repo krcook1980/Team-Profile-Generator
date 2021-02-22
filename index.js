@@ -43,15 +43,14 @@ function nextMgr() {
 
             },
         ]).then((response) => {
-
+            console.log(response)
             //run response through class Manager ... need to add to newEntry
             let newEmp = [];
 
             const newMgr = new Manager(response.empName, response.empId, response.empEmail, response.empNum);
-
-            newEmp.push(newMgr);
-            newEmp.push(newMgr.getRole());
             
+            newEmp.push(newMgr);
+        
 
             //push new info to store file using the id as a unique variable name
 
