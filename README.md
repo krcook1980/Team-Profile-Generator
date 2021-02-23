@@ -30,14 +30,14 @@
    Four test files can be found in the tests folder. They can be run via node, or the jest extension provides a run option in each file.
 
    ## References
-    - [GitHub](https://github.com/)
-    - [Bootstrap](https://getbootstrap.com/)
-    - [coolors.co](https://coolors.co/) for color palate
-    - [W3 Schools](https://www.w3schools.com/)
-    - [Stackoverflow](https://stackoverflow.com/)
-    - [freeformatter](https://www.freeformatter.com/html-validator.html)
-    - [freecodecamp.org](https://www.freecodecamp.org/)
-    - Bootcamp Activities 12, 13, 19, 22, 28
+   - [GitHub](https://github.com/)
+  - [Bootstrap](https://getbootstrap.com/)
+  - [coolors.co](https://coolors.co/) for color palate
+  - [W3 Schools](https://www.w3schools.com/)
+  - [Stackoverflow](https://stackoverflow.com/)
+  - [freeformatter](https://www.freeformatter.com/html-validator.html)
+  - [freecodecamp.org](https://www.freecodecamp.org/)
+  - Bootcamp Activities 12, 13, 19, 22, 28
 
   ## Questions
    Please see my [GitHub profile](https://github.com/krcook1980)  
