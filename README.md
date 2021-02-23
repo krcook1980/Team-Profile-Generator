@@ -2,7 +2,7 @@
   # Team Profile Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
   [Full Demo Video](https://drive.google.com/file/d/1C0_Ap6NoSQGz_bWzNQT3QVeXz9zwfSvE/view)  
-  ![demo clip](src\TPGgif.gif)
+  ![demo clip](https://github.com/krcook1980/Team-Profile-Generator/blob/main/src/TPGgif.gif)
 ---
   ## Description
    Generate a team profile webpage via the terminal using inquirer. Jest used to build tests.
