@@ -2,7 +2,7 @@
   # Team Profile Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
   [Full Demo Video](https://drive.google.com/file/d/1C0_Ap6NoSQGz_bWzNQT3QVeXz9zwfSvE/view)  
-  ![demo clip](src\TPGgif.gif)
+  ![demo clip](https://github.com/krcook1980/Team-Profile-Generator/blob/main/src/TPGgif.gif)
 ---
   ## Description
    Generate a team profile webpage via the terminal using inquirer. Jest used to build tests.
@@ -30,14 +30,14 @@
    Four test files can be found in the tests folder. They can be run via node, or the jest extension provides a run option in each file.
 
    ## References
-    - [GitHub](https://github.com/)
-    - [Bootstrap](https://getbootstrap.com/)
-    - [coolors.co](https://coolors.co/) for color palate
-    - [W3 Schools](https://www.w3schools.com/)
-    - [Stackoverflow](https://stackoverflow.com/)
-    - [freeformatter](https://www.freeformatter.com/html-validator.html)
-    - [freecodecamp.org](https://www.freecodecamp.org/)
-    - Bootcamp Activities 12, 13, 19, 22, 28
+   - [GitHub](https://github.com/)
+  - [Bootstrap](https://getbootstrap.com/)
+  - [coolors.co](https://coolors.co/) for color palate
+  - [W3 Schools](https://www.w3schools.com/)
+  - [Stackoverflow](https://stackoverflow.com/)
+  - [freeformatter](https://www.freeformatter.com/html-validator.html)
+  - [freecodecamp.org](https://www.freecodecamp.org/)
+  - Bootcamp Activities 12, 13, 19, 22, 28
 
   ## Questions
    Please see my [GitHub profile](https://github.com/krcook1980)  
